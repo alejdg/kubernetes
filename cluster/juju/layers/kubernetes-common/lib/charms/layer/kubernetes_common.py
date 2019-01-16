@@ -36,6 +36,12 @@ db = unitdata.kv()
 kubeclientconfig_path = '/root/.kube/config'
 gcp_creds_env_key = 'GOOGLE_APPLICATION_CREDENTIALS'
 kubeproxyconfig_path = '/root/cdk/kubeproxyconfig'
+certs_dir = Path('/root/cdk')
+ca_crt_path = certs_dir / 'ca.crt'
+server_crt_path = certs_dir / 'server.crt'
+server_key_path = certs_dir / 'server.key'
+client_crt_path = certs_dir / 'client.crt'
+client_key_path = certs_dir / 'client.key'
 
 
 def get_version(bin_name):
